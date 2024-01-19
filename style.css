@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  src: url('https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'San Francisco';
+}
+
+body {
+  height: 100dvh;
+}
+
+nav > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  cursor: pointer;
+  font-size: small;
+}
+
+main {
+  width: 980px;
+  margin: 50px 41.5px;
+}
+
+#produto {
+  display: flex;
+  & > #opcoes-produto {
+    flex-grow: 0;
+    flex-basis: 1;
+  }
+  & > #visualizacao {
+    flex-grow: 0;
+    flex-basis: 2;
+  }
+}
+
+#opcoes-produto {
+  display: flex;
+  flex-direction: column;
+  & > h1 {
+    width: 20rem;
+    font-size: 2rem;
+  }
+}
