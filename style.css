@@ -9,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'San Francisco';
+  list-style-type: none;
 }
 :root {
   display: flex;
@@ -18,17 +19,16 @@
 
 body {
   height: 100dvh;
-  width: 70%;
 }
 
 nav {
-  width: 100%;
+  width: 980px;
+  margin: 0 8px;
   & > ul {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
     cursor: pointer;
     font-size: small;
   }
@@ -36,17 +36,18 @@ nav {
 
 main {
   margin: 50px 0;
+  width: 980px;
 }
 
 #produto {
   display: flex;
   & > #opcoes-produto {
     flex-grow: 0;
-    flex-basis: 1;
+    flex-basis: 33%;
   }
   & > #visualizacao {
     flex-grow: 0;
-    flex-basis: 2;
+    flex-basis: 66%;
   }
 }
 
@@ -62,21 +63,116 @@ main {
 .precos {
   margin: 14px 0 0;
   padding: 0 0 10px;
+  font-size: 1.1rem;
   & > #parcelas {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: #0066cc;
-    & b {
-      margin-right: 0.2rem;
+    display: flex;
+    & :first-child {
+      width: fit-content;
+      margin-right: 0.3rem;
     }
-    & text {
+    & p {
+      width: fit-content;
       color: #0066cc;
       cursor: pointer;
-    }
-    & text:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   & #a-vista {
+    font-size: 0.8rem;
+  }
+}
+
+#opcoes {
+  margin: 30px 0 0;
+  & h2 {
+    font-size: 1.1rem;
+  }
+  & ul {
+    display: flex;
+    padding: 1.1rem 0 0 0;
+    & li {
+      margin: 0 8px 8px 0;
+      & input {
+        display: none;
+      }
+      & label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 42px;
+        width: 42px;
+        & > img {
+          width: 32px;
+          mix-blend-mode: color;
+        }
+      }
+      & input[type='radio']:checked + label {
+        border-radius: 50%;
+        border: 2px solid #0066cc;
+      }
+    }
+  }
+}
+
+#selo-carbono {
+  display: flex;
+  align-items: center;
+  padding: 2px 0 16px 3px;
+  & img {
+    width: 25px;
+  }
+  & p {
     font-size: 0.75rem;
+  }
+}
+
+#tamanho-caixa {
+  margin-top: 30px;
+  & > div {
+    display: flex;
+    gap: 15px;
+    & input {
+      display: none;
+    }
+    & label {
+      flex-basis: 50%;
+      font-size: 1.1rem;
+      font-weight: bold;
+      height: 5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 14px 0 0;
+      border: 0.1px solid #797979;
+      border-radius: 10px;
+    }
+    & input[type='radio']:checked + label {
+      border: 2px solid #0066cc;
+    }
+    & input[type='radio']:not(checked) + label {
+      border: 0.1px solid #797979;
+    }
+  }
+}
+
+#disclaimer {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  & > .saiba-mais {
+    color: #0066cc;
+    cursor: pointer;
+    & > b {
+      margin-left: 0.2rem;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
