@@ -57,7 +57,7 @@
           <h1>Pulseira loop esportiva azul-inverno para caixa de 45 mm</h1>
           <div class="precos">
             <p id="preco">R$ 499,90</p>
-            <span id="parcelas">
+            <span id="parcelas" class="link">
               <p>&#9432</p>
               <p>Em até 12x de R$ 41,58</p>
             </span>
@@ -79,21 +79,57 @@
             <div id="tamanho-caixa">
               <h2>Tamanho da caixa</h2>
               <div id="opcoes-tamanho">
-                <input type="radio" name="41mm" id="41mm">
+                <input type="radio" name="opcao" id="41mm">
                 <label for="41mm">41mm</label>
-                <input type="radio" name="45mm" id="45mm" checked>
+                <input type="radio" name="opcao" id="45mm" checked>
                 <label for="45mm">45mm</label>
               </div>
               <div id='disclaimer'>
                 <p>Compatível com a maioria das versões de Apple Watch.
                 </p>
-                <p class="saiba-mais">Saiba mais sobre a compatibilidade de pulseiras <b>&#8250;</b>
+                <p id='saiba-mais' class="link">Saiba mais sobre a compatibilidade de pulseiras <b>&#8250;</b>
                 </p>
+              </div>
+              <div id="info-extra">
+                <h2>Tamanho da pulseira
+                </h2>
+                <p id="info-principal">Tamanho único (cabe na maioria dos pulsos)
+                </p>
+                <p id="info-secundaria">Para pulsos de 145 a 220 mm.
+                </p>
+              </div>
+            </div>
+            <div id="entrega">
+              <div id="icone">
+                <svg viewBox="0 0 25 25" class="as-svgicon as-svgicon-boxtruck as-svgicon-reduced as-svgicon-boxtruckreduced" role="img" aria-hidden="true" width="25px" height="25px"><path fill="none" d="M0 0h25v25H0z"></path><path fill="#1d1d1f" d="m23.482 12.847-2.92-3.209A1.947 1.947 0 0 0 18.985 9H17V6.495a2.5 2.5 0 0 0-2.5-2.5h-11a2.5 2.5 0 0 0-2.5 2.5v9.75a2.5 2.5 0 0 0 2.5 2.5h.548A2.746 2.746 0 0 0 6.75 21.02 2.618 2.618 0 0 0 9.422 19h6.681a2.744 2.744 0 0 0 5.347-.23h.735A1.656 1.656 0 0 0 24 16.98v-2.808a1.937 1.937 0 0 0-.518-1.325ZM8.426 18.745a1.74 1.74 0 0 1-3.352 0 1.577 1.577 0 0 1 .015-1 1.738 1.738 0 0 1 3.322 0 1.578 1.578 0 0 1 .015 1ZM9.447 18a2.726 2.726 0 0 0-5.394-.255H3.5a1.502 1.502 0 0 1-1.5-1.5v-9.75a1.502 1.502 0 0 1 1.5-1.5h11a1.502 1.502 0 0 1 1.5 1.5V18Zm10.972.77a1.738 1.738 0 0 1-3.337 0 1.573 1.573 0 0 1 0-1 1.742 1.742 0 1 1 3.337 1ZM23 16.98c0 .569-.229.79-.815.79h-.735A2.73 2.73 0 0 0 17 16.165V10h1.986a.976.976 0 0 1 .838.314l2.927 3.214a.95.95 0 0 1 .249.644Zm-1.324-3.36a.512.512 0 0 1 .174.38h-3.306a.499.499 0 0 1-.544-.528V11h1.073a.76.76 0 0 1 .594.268Z"></path></svg>
+              </div>
+              <div id="informacoes-entrega">
+                <span>Entrega:</span>
+                <p id="disponibilidade">Em estoque</p>
+                <p id="valor-frete">Frete Grátis</p>
+                <p id="tempo-entrega" class="link">Ver datas de entrega</p>
+              </div>
+            </div>
+            <div id="comprar">
+              <button id="adicionar-a-sacola">Colocar na sacola</button>
+              <div id="comprar-depois">
+                <span>Precisa de um tempo?</span>
+                <p>Mantenha todas as suas seleções salvando este aparelho em Itens salvos. Depois, você pode voltar quando quiser e continuar de onde parou.</p>
+                <p class="link" id="salvar-depois"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                </svg> Salvar para depois</p>
               </div>
             </div>
           </div>
         </div>
-        <div id="visualizacao"></div>
+        <div id="visualizacao">
+          <img src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-2.jpeg" alt="" id="imagem-visualizacao">
+          <ul id="selecionar-imagem">
+            <li><input type="radio" name="opcao-imagem" id="imagem-1"><label for="imagem-1"><img src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-1.jpeg" alt="" srcset=""></label></li>
+            <li><input type="radio" name="opcao-imagem" id="imagem-2" checked><label for="imagem-2"><img src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-2.jpeg" alt="" srcset=""></label></li>
+            <li><input type="radio" name="opcao-imagem" id="imagem-3"><label for="imagem-3"><img src="./imagens/opcoes-cores/imagens-azul-inverno/imagem-3.jpeg" alt="" srcset=""></label></li>
+          </ul>
+        </div>
       </section>
       <section id="carbon-neutral"></section>
       <section id="informacoes"></section>
